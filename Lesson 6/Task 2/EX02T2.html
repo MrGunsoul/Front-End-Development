@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="sylesheet" href="EX06T6.css">
+</head>
+<body>
+    <form onsubmit="submitForm(event)">
+        <fieldset>
+            <legend>Required information</legend>
+            <p>
+                <legend for="test">What is your first name?</legend>
+                <input type="text"  id="test" reguired name="first name" pattern="[A-Z][a-z]{1,15}" required>
+            </p>
+            <p>
+                <legend for="last name">What is your last name?</abbr></legend>
+                <input type="text" id="last name" reguired name="last name" pattern="[A-Z][a-z]{1,15}"required>
+            </p>
+            <p>
+                <legend for="age">How old are you?</legend>
+                <input type="number"  min="7" max="120" step="1" id="a1" reguired name="age" pattern="\d+"required>
+            </p>
+            <p>
+                <legend for="email">What's your e-mail address?</legend>
+                <input type="email" id="email" name="email">
+            </p>
+            
+            <p>
+                <legend>Do you like coding?<abbr title="This field is mandatory" aria-label="required"></abbr></legend>
+                <input type="radio" required name="code" id="r1" value="Yes"><label for="r1">Yes</label>
+                <input type="radio" required name="code" id="r2" value="No"><label for="r2">No</label>
+                <input type="radio" required name="code" id="r3" value="Maybe"><label for="r3">Maybe</label>
+            </p>
+            <p>
+                <legend>Do you exercise often?<abbr title="This field is mandatory" aria-label="required"></abbr></legend>
+                <input type="radio" required name="exe" id="r1" value="Yes"><label for="r1">Yes</label>
+                <input type="radio" required name="exe" id="r2" value="No"><label for="r2">No</label>
+                <input type="radio" required name="exe" id="r3" value="Sometimes"><label for="r3">Sometimes</label>
+            </p>
+            <p>
+                <legend>Do you play videogames?<abbr title="This field is mandatory" aria-label="required"></abbr></legend>
+                <input type="radio" required name="games" id="r1" value="yes"><label for="r1">Yes</label>
+                <input type="radio" required name="games" id="r2" value="no"><label for="r2">No</label>
+                <input type="radio" required name="games" id="r3" value="Sometimes"><label for="r3">Sometimes</label>
+            </p>
+            <p>
+                <legend>Have you enjoyed your studies?<abbr title="This field is mandatory" aria-label="required"></abbr></legend>
+                <input type="radio" required name="study" id="r1" value="Yes"><label for="r1">Yes</label>
+                <input type="radio" required name="study" id="r2" value="No"><label for="r2">No</label>
+                <input type="radio" required name="study" id="r3" value="It has ups and downs"><label for="r3">It has ups and downs</label>
+            </p>
+            <p>
+                <legend>Do you feel motivated?<abbr title="This field is mandatory" aria-label="required"></abbr></legend>
+                <input type="radio" required name="driver" id="r1" value="Yes"><label for="r1">Yes</label>
+                <input type="radio" required name="driver" id="r2" value="No"><label for="r2">No</label>
+                <input type="radio" required name="driver" id="r3" value="Sometimes"><label for="r3">Sometimes</label>
+            </p>
+        </fieldset>
+        <p>
+          <legend for="feed">You can leave feedback!</legend>
+          <textarea id="feed" name="msg" maxlength="140" rows="5"></textarea>
+        </p>
+        <p>
+          <button>Submit</button>
+        </p>
+    </form>
+    <script type="text/JavaScript">
+        function submitForm(event){
+          event.preventDefault();
+          window.alert("Hähä, eipäs paineta ;)");
+          //window.history.back();
+        }
+    </script>  
+</body>
+</html>

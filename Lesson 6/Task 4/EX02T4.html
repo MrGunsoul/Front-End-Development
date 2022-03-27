@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="sylesheet" href="EX06T6.css">
+</head>
+<body>
+    <form>
+        <p>
+            Enter your feedback: <input type="text" id="feedback" onblur="mysave()">
+        </p>
+    </form>
+    <script>
+        myload();
+
+        function mysave() {
+            alert("Saved")
+          localStorage.setItem("MyFeedback", document.getElementById("feedback").value);
+        }
+        function myload() {
+            if (localStorage) {
+                alert("Loaded")
+                document.getElementById("feedback").value=localStorage.getItem("MyFeedback");;
+            }
+        }
+        </script>
+</body>
+</html>

@@ -24,3 +24,4 @@ function main(){
     document.getElementById("content").innerHTML = buildRegisterNumber(theLetters, theDigits, letters, digits);
 }
 
+main()

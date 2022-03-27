@@ -1,0 +1,15 @@
+<form onsubmit="submitForm(event)">
+    <input type="text">
+    <button type="submit">Submit</button>
+  </form>
+  <script type="text/JavaScript">
+    function submitForm(event){
+      event.preventDefault();
+      window.history.back();
+    }
+  </script>
+
+element.addEventListener("submit", function(event) {
+    event.preventDefault();
+    window.history.back();
+  }, true);
